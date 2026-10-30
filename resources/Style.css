@@ -1,0 +1,205 @@
+:root {
+    --bg-color: #121212;
+    --primary-color: #ef4444;
+    --btn-play: #dc2626;
+    --btn-play-hover: #ef4444;
+    --btn-pause: #7f1d1d;
+    --btn-pause-hover: #991b1b;
+    --text-color: #ffffff;
+    --text-sub: #fca5a5;
+    --font-principal: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #1c0505 0%, #121212 100%);
+    color: var(--text-color);
+    font-family: var(--font-principal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px 10px;
+}
+
+.portada-header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-bottom: 2px solid var(--primary-color);
+    width: 100%;
+    max-width: 900px;
+}
+
+.portada-header h1 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.portada-header p {
+    font-size: 0.9rem;
+    color: #e2e8f0;
+    margin-bottom: 4px;
+}
+
+.nav-principal {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.nav-titulo {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-sub);
+    letter-spacing: 1px;
+}
+
+main.container {
+    max-width: 900px;
+    width: 100%;
+}
+
+.grid-main-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    align-items: center;
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.imagen-box {
+    text-align: center;
+    margin: 0;
+}
+
+.imagen-box img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagen-box img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 15px rgba(239, 68, 68, 0.4);
+}
+
+.panel-reproductor {
+    width: 100%;
+}
+
+.selector-box {
+    margin-bottom: 20px;
+}
+
+.selector-box label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-sub);
+    font-weight: 600;
+}
+
+.selector-box select {
+    background-color: #1e1e2e;
+    color: var(--text-color);
+    border: 1px solid var(--primary-color);
+}
+
+.info-cancion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.titulo-cancion {
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 2px;
+}
+
+.artista {
+    color: var(--text-sub);
+    margin-bottom: 0;
+}
+
+.btn {
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#btnPlay {
+    background-color: var(--btn-play); 
+}
+
+#btnPlay:hover {
+    background-color: var(--btn-play-hover);
+}
+
+#btnPause {
+    background-color: var(--btn-pause); 
+}
+
+#btnPause:hover {
+    background-color: var(--btn-pause-hover);
+}
+
+#audioPlayer {
+    width: 100%;
+    margin-top: 10px;
+}
+
+footer {
+    margin-top: auto;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.btn-github {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: var(--text-sub);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-github:hover {
+    background-color: var(--primary-color);
+    color: white;
+    box-shadow: 0 0 12px rgba(239, 68, 68, 0.5);
+}
+
+@media (max-width: 576px) {
+    .imagen-box img {
+        width: 220px;
+        height: 220px;
+    }
+}

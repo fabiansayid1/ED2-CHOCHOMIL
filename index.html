@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ED2 - CHOCHOMIX</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="resources/Style.css">
+
+</head>
+<body>
+
+    <header class="portada-header">
+        <h1>CHOCHOMIX</h1>
+    </header>
+
+    <nav class="nav-principal">
+        <span class="nav-titulo">Album: BREACH - Twenty One Pilots</span>
+    </nav>
+
+    <main class="container">
+        <section class="row grid-main-layout">
+            
+            <article class="col-12 col-sm-12 col-md-6 col-lg-6 panel-portada">
+                <h2>Portada de la canción</h2>
+                <figure class="imagen-box">
+                    <img id="imgPortada" src="resources/imagenes/CenterMass.jpg" alt="Portada de la canción">
+                </figure>
+            </article>
+
+            <article class="col-12 col-sm-12 col-md-6 col-lg-6 panel-reproductor">
+                <h2>Lista de Reproducción</h2>
+                
+                <section class="selector-box">
+                    <label for="selectCancion">Elegir canción:</label>
+                    <select id="selectCancion" class="form-select">
+                        <option value="0">1. Center Mass</option>
+                        <option value="1">2. City Walls</option>
+                        <option value="2">3. Cottonwood</option>
+                        <option value="3">4. Days Lie Dormant</option>
+                        <option value="4">5. Downstairs</option>
+                        <option value="5">6. Drag Path</option>
+                        <option value="6">7. Drum Show</option>
+                        <option value="7">8. Intentions</option>
+                        <option value="8">9. RAW FEAR</option>
+                        <option value="9">10. The Contract</option>
+                    </select>
+                </section>
+
+                <section class="info-cancion">
+                    <header class="detalles">
+                        <p id="tituloCancion" class="titulo-cancion">Center Mass</p>
+                        <p id="artistaCancion" class="artista">Twenty One Pilots</p>
+                    </header>
+                    <nav class="botones">
+                        <button id="btnPlay" class="btn play">Play</button>
+                        <button id="btnPause" class="btn pause">Pause</button>
+                    </nav>
+                </section>
+
+                <audio id="audioPlayer" src="resources/musica/CenterMass.mp3" controls></audio>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <a href="https://github.com/tu-usuario/tu-repositorio" target="_blank" class="btn-github">
+            Ver proyecto en GitHub
+        </a>
+    </footer>
+
+    <script src="resources/Main.js"></script>
+</body>
+</html>
